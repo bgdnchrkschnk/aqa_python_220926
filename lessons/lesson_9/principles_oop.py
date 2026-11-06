@@ -55,7 +55,48 @@ minidog = MiniDog(name="Tuzik", breed="chihua", age=1, weight=2)
 def make_it_move(obj):
     obj.move()
 
-make_it_move(dog)
-make_it_move(cat)
-make_it_move(minidog)
+# make_it_move(dog)
+# make_it_move(cat)
+# make_it_move(minidog)
 
+
+# INCAPSULATION
+# public
+# protected
+# private
+
+
+
+
+class BankAccount:
+    def __init__(self, name: str, account_type: str, balance: int):
+        self.name = name # public
+        # self.account_type = account_type # public
+        # self.balance = balance # public
+        self._account_type = account_type # protected ( '_' - говорить про те що це технічний атрибут)
+        # self._balance = balance # protected
+        self.__balance = balance # private (mangling name)
+
+        self.__creating_cell_in_db() # start creating bank account...
+
+
+    def __creating_cell_in_db(self): # private
+        # db_client.insert_record_in_table
+        # db_client.creating_audit_account
+        ...
+
+    def get_my_balance(self) -> int:
+        return self.__balance
+
+
+
+
+
+
+bank_account = BankAccount("Oleg", "classic", 100)
+# print(
+#     bank_account.get_my_balance()
+# )
+
+
+print(bank_account._BankAccount__balance) # mangling mechanism
