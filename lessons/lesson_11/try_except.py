@@ -53,6 +53,9 @@ test_data = [
 
 
 def is_adult(age: int) -> bool:
+    """
+    This function returns True if age is adult else False
+    """
     return age >= 18
 
 list_of_ages = [18, 25, 35, 0, -65, 70, 80]
