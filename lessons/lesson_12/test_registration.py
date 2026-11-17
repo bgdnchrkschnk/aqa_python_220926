@@ -79,7 +79,7 @@ class TestRegistration(TestCase): # test suite
             register(username=test_username, password=test_password, email=test_email, phone_number=test_phone_number)
 
         with self.assertLogs(custom_logger, level="INFO"):
-            register(username=test_username, password=, email=test_email, phone_number=test_phone_number)
+            register(username=test_username, password=None, email=test_email, phone_number=test_phone_number)
 
 
 if __name__ == "__main__":
