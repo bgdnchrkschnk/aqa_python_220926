@@ -1,0 +1,15 @@
+{
+  "id": "usr_98a4f2c1",
+  "username": "neon_wanderer",
+  "age": 29,
+  "isVerified": true
+  "accountBalance": 1450.75,
+  "roles": ["editor", "contributor", "beta_tester"],
+  "preferences": {
+    "theme": "dark",
+    "notificationsEnabled": false
+  },
+  "lastLogin": "2026-11-20T18:45:00Z",
+  "referralCode": null,
+  "loginStreakDays": 14
+}
